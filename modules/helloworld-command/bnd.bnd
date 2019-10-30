@@ -1,0 +1,3 @@
+Bundle-Name: helloworld-command
+Bundle-SymbolicName: com.rcs.liferay.command
+Bundle-Version: 1.0.0
