@@ -1,6 +1,8 @@
-package com.rcs.liferay.hello.impl;
+package com.rcs.liferay.hello.uppercase.impl;
 
+import com.liferay.portal.kernel.util.StringUtil;
 import com.rcs.liferay.hello.api.HelloService;
+
 import org.osgi.service.component.annotations.Component;
 
 /**
@@ -9,12 +11,13 @@ import org.osgi.service.component.annotations.Component;
 @Component(
 	immediate = true,
 	property = {
+		"service.ranking:Integer=100"
 	},
 	service = HelloService.class
 )
-public class HelloServiceImpl implements HelloService {
+public class HelloUppercaseServiceImpl implements HelloService {
 	@Override
 	public String sayHello(String what) {
-		return "Hello " + what + " " + what;
+		return StringUtil.upperCase(what);
 	}
 }
