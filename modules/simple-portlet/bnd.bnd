@@ -1,0 +1,4 @@
+Bundle-Name: simple-portlet
+Bundle-SymbolicName: com.rcs.training.simple.portlet
+Bundle-Version: 1.0.0
+Export-Package: com.rcs.training.simple.portlet.constants
