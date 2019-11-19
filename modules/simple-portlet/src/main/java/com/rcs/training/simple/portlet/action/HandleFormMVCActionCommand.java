@@ -11,7 +11,7 @@ import javax.portlet.PortletException;
 @Component(
         immediate = true,
         property = {
-                "javax.portlet.name" + SimpleMVCPortletKeys.SIMPLEMVC,  //Portlet we're listening to
+                "javax.portlet.name=" + SimpleMVCPortletKeys.SIMPLEMVC,  //Portlet we're listening to
                 "mvc.command.name=handleForm" //Action we're listening for
         }
 )
