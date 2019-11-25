@@ -1,4 +1,0 @@
-Bundle-Name: training-portlet
-Bundle-SymbolicName: com.rcs.training.portlet
-Bundle-Version: 1.0.0
-Export-Package: com.rcs.training.portlet.constants

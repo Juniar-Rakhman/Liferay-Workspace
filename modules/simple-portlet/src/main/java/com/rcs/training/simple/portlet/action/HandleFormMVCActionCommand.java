@@ -1,6 +1,7 @@
 package com.rcs.training.simple.portlet.action;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCActionCommand;
+import com.liferay.portal.kernel.util.ParamUtil;
 import com.rcs.training.simple.portlet.constants.SimpleMVCPortletKeys;
 import org.osgi.service.component.annotations.Component;
 
@@ -30,7 +31,7 @@ public class HandleFormMVCActionCommand implements MVCActionCommand {
 
         System.out.println("HandleFormMVCActionCommand.doProcessAction()");
 
-        String backgroundColor = actionRequest.getParameter("backgroundColor");
+        String backgroundColor = ParamUtil.getString(actionRequest, "backgroundColor");
 
         System.out.println("backgroundColor = " + backgroundColor);
 

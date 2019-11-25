@@ -14,6 +14,7 @@
 	</p>
 </div>
 
+<%-- use renderURL to invoke the Render Phase --%>
 <portlet:renderURL var="viewRedURL">
 	<portlet:param name="backgroundColor" value="red"/>
 </portlet:renderURL>
@@ -22,7 +23,7 @@
 	<portlet:param name="backgroundColor" value="yellow"/>
 </portlet:renderURL>
 
-<div class="btn-group">
+<div class="btn-group"><%-- In this case user invoke the render phase by clicking this button	--%>
 	<a class="btn btn-default" href="<%= viewRedURL %>">Set red</a>
 	<a class="btn btn-default" href="<%= viewYellowURL %>">Set yellow</a>
 </div>
