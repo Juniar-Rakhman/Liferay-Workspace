@@ -1,0 +1,4 @@
+Bundle-Name: event-receiver-portlet
+Bundle-SymbolicName: com.rcs.training.event.receiver.portlet
+Bundle-Version: 1.0.0
+Export-Package: com.rcs.training.event.receiver.portlet.constants
