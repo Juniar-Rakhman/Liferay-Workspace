@@ -35,6 +35,14 @@ import java.io.IOException;
 public class SimpleMVCPortlet extends MVCPortlet {
 
 	@Override
+	public void init() throws PortletException {
+
+		System.out.println("I'm in Init Phase!!!");
+
+		super.init();
+	}
+
+	@Override
 	public void render(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
 		String backgroundColor = ParamUtil.getString(renderRequest, "backgroundColor");
 

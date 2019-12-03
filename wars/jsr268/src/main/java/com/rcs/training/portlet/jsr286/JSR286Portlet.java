@@ -11,7 +11,6 @@ import javax.portlet.PortletSession;
 import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 public class JSR286Portlet implements Portlet {
 
@@ -28,9 +27,6 @@ public class JSR286Portlet implements Portlet {
     @Override
     public void render(RenderRequest request, RenderResponse response) throws PortletException, IOException {
         System.out.println("Inside render()");
-
-//        PrintWriter printWriter = response.getWriter();
-//        printWriter.write("I'M PICKLE RIIIIIICK!!");
 
         String path = "/META-INF/resources/view.jsp";
         PortletSession portletSession = request.getPortletSession();

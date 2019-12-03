@@ -26,7 +26,7 @@ import javax.xml.namespace.QName;
 		"javax.portlet.name=" + EventPublisherPortletKeys.EVENT_PUBLISHER,
 		"javax.portlet.resource-bundle=content.Language",
 		"javax.portlet.security-role-ref=power-user,user",
-		"javax.portlet.supported-publishing-event=message;http://www.rithm.nl",
+		"javax.portlet.supported-publishing-event=ipc-text;http://www.rithm.nl",
 	},
 	service = Portlet.class
 )
